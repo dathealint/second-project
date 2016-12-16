@@ -17,6 +17,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/button_margin_left_right"
+            android:layout_marginRight="@dimen/button_margin_left_right"
             android:orientation="vertical"
             >
 
@@ -26,8 +28,10 @@
                 android:gravity="center_horizontal"
                 android:text="@string/team_a_name"
                 android:textSize="@dimen/text_size_title"
-                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/colorTeamName"
                 android:layout_marginTop="@dimen/margin_title_top"
+                android:layout_marginBottom="@dimen/margin_title_top"
                 />
 
             <TextView
@@ -37,17 +41,17 @@
                 android:gravity="center_horizontal"
                 android:text="15"
                 android:textSize="@dimen/text_size_score"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/margin_score_top_bottom"
-                android:layout_marginBottom="@dimen/margin_score_top_bottom"
+                android:textColor="@color/colorScore"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="@dimen/margin_score_bottom"
                 />
 
             <Button
-                android:layout_width="@dimen/button_width"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/spacing_vertical_buttons"
+                android:layout_marginBottom="@dimen/spacing_vertical_buttons"
+                android:gravity="center_horizontal|center_vertical"
                 android:tag="3"
                 android:text="@string/btn_3_points_title"
                 android:background="@color/colorButtonBg"
@@ -55,10 +59,11 @@
                 />
 
             <Button
-                android:layout_width="@dimen/button_width"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/spacing_vertical_buttons"
+                android:layout_marginBottom="@dimen/spacing_vertical_buttons"
+                android:gravity="center_horizontal|center_vertical"
                 android:tag="2"
                 android:text="@string/btn_2_points_title"
                 android:background="@color/colorButtonBg"
@@ -66,10 +71,11 @@
                 />
 
             <Button
-                android:layout_width="@dimen/button_width"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/spacing_vertical_buttons"
+                android:layout_marginBottom="@dimen/spacing_vertical_buttons"
+                android:gravity="center_horizontal|center_vertical"
                 android:tag="1"
                 android:text="@string/btn_1_points_title"
                 android:background="@color/colorButtonBg"
@@ -77,10 +83,11 @@
                 />
 
             <Button
-                android:layout_width="@dimen/button_width"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/spacing_vertical_buttons"
+                android:layout_marginBottom="@dimen/spacing_vertical_buttons"
+                android:gravity="center_horizontal|center_vertical"
                 android:tag="-1"
                 android:text="@string/btn_minus1_points_title"
                 android:background="@color/colorButtonBg"
@@ -92,7 +99,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/margin_title_top"
-            android:background="@color/colorSeparatorLine" >
+            android:background="@android:color/darker_gray" >
         </LinearLayout>
 
         <LinearLayout
@@ -100,6 +107,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:layout_marginLeft="@dimen/button_margin_left_right"
+            android:layout_marginRight="@dimen/button_margin_left_right"
             >
 
             <TextView
@@ -108,8 +117,10 @@
                 android:gravity="center_horizontal"
                 android:text="@string/team_b_name"
                 android:textSize="@dimen/text_size_title"
-                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/colorTeamName"
                 android:layout_marginTop="@dimen/margin_title_top"
+                android:layout_marginBottom="@dimen/margin_title_top"
                 />
 
             <TextView
@@ -119,17 +130,17 @@
                 android:gravity="center_horizontal"
                 android:text="15"
                 android:textSize="@dimen/text_size_score"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimary"
-                android:layout_marginTop="@dimen/margin_score_top_bottom"
-                android:layout_marginBottom="@dimen/margin_score_top_bottom"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorScore"
+                android:layout_marginBottom="@dimen/margin_score_bottom"
                 />
 
             <Button
-                android:layout_width="@dimen/button_width"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/spacing_vertical_buttons"
+                android:layout_marginBottom="@dimen/spacing_vertical_buttons"
+                android:gravity="center_horizontal|center_vertical"
                 android:tag="3"
                 android:text="@string/btn_3_points_title"
                 android:background="@color/colorButtonBg"
@@ -137,10 +148,11 @@
                 />
 
             <Button
-                android:layout_width="@dimen/button_width"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/spacing_vertical_buttons"
+                android:layout_marginBottom="@dimen/spacing_vertical_buttons"
+                android:gravity="center_horizontal|center_vertical"
                 android:tag="2"
                 android:text="@string/btn_2_points_title"
                 android:background="@color/colorButtonBg"
@@ -148,20 +160,22 @@
                 />
 
             <Button
-                android:layout_width="@dimen/button_width"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/spacing_vertical_buttons"
+                android:layout_marginBottom="@dimen/spacing_vertical_buttons"
+                android:gravity="center_horizontal|center_vertical"
                 android:tag="1"
                 android:text="@string/btn_1_points_title"
                 android:background="@color/colorButtonBg"
                 android:onClick="onClickPointTeamBButton"
                 />
             <Button
-                android:layout_width="@dimen/button_width"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/spacing_vertical_buttons"
+                android:layout_marginBottom="@dimen/spacing_vertical_buttons"
+                android:gravity="center_horizontal|center_vertical"
                 android:tag="-1"
                 android:text="@string/btn_minus1_points_title"
                 android:background="@color/colorButtonBg"
@@ -181,8 +195,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/margin_reset_bottom"
         android:text="@string/btn_reset_title"
-        android:background="@color/colorButtonResetBg"
-        android:textColor="@android:color/white"
+        android:background="@color/colorButtonBg"
         android:onClick="onClickReset"
         />
 

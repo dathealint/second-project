@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#FF9800</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorSeparatorLine">#767676</color>
-    <color name="colorButtonBg">#E3B505</color>
-    <color name="colorButtonResetBg">#084C61</color>
+    <color name="colorButtonBg">#FF9800</color>
+    <color name="colorTeamName">#616161</color>
+    <color name="colorScore">#000000</color>
 </resources>
